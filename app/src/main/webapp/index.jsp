@@ -1,9 +1,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java"  %>
-<% taglib uri="jakarta.tags.core" prefix="c" %>
+<%@ taglib uri="jakarta.tags.core" prefix="c" %>
 
 <%
-String frutas[] = ["maca", "uva", "morango"];
-session.setAttribute("frutas", fruta)
+String frutas[] = {"Maça", "Uva", "Morango"};
+session.setAttribute("frutas", frutas);
 %>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -16,7 +16,7 @@ session.setAttribute("frutas", fruta)
     <body>
         <h1>Olá Mundo!!!</h1>
         <c:forEach var="f" items="$(frutas)">
-            <p>$(f)</p>
+            <p>${f})</p>
         </c:forEach>
     </body>
 </html>
