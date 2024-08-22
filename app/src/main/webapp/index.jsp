@@ -15,8 +15,8 @@ session.setAttribute("frutas", frutas);
     </head>
     <body>
         <h1>Olá Mundo!!!</h1>
-        <c:forEach var="f" items="$(frutas)">
-            <p>${f})</p>
+        <c:forEach var="f" items="${frutas}">
+            <p>${f}</p>
         </c:forEach>
     </body>
 </html>
